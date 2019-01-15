@@ -10,7 +10,7 @@ import threading
 @route('/conmysql', method=['POST', 'GET'])
 def conmysql():
 	# start_response('200 OK', [('Content-Type', 'text/html')])
-	db = pymysql.connect(host="", user='cloud', password='!57465248', db='clouddata', port=3306)
+	db = pymysql.connect(host="", user='', password='', db='', port=3306)
 	# db= pymysql.connect(user='test1',password='testtest',db='pymysql_db',port=3306)
 	cur = db.cursor()
 	sql = 'select * from data_test'
@@ -28,7 +28,7 @@ def conmysql():
 
 
 def finmysql():
-	db = pymysql.connect(host="", user='cloud', password='!57465248', db='clouddata', port=3306)
+	db = pymysql.connect(host="", user='', password='', db='', port=3306)
 	# db= pymysql.connect(user='test1',password='testtest',db='pymysql_db',port=3306)
 	cur = db.cursor()
 	sql = 'select * from data_test'
@@ -78,7 +78,7 @@ def login():
 
 
 def setmysql(str):
-	db = pymysql.connect(host="", user='cloud', password='!57465248', db='clouddata', port=3306)
+	db = pymysql.connect(host="", user='', password='', db='', port=3306)
 	# db= pymysql.connect(user='test1',password='testtest',db='pymysql_db',port=3306)
 
 	cur = db.cursor()
